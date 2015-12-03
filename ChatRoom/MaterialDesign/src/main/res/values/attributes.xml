@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomAttributes">
+
+        <!-- Color of ripple animation -->
+        <attr name="material_rippleColor" format="color|reference"/>
+        <!-- Speed of ripple animation -->
+        <attr name="material_rippleSpeed" format="float"/>
+        <!-- indicate if the slider must show number indicator -->
+        <attr name="material_showNumberIndicator" format="boolean"/>
+        <!-- in progress view indicate max value of progress -->
+        <attr name="material_max" format="integer"/>
+        <!-- in progress view indicate min value of progress -->
+        <attr name="material_min" format="integer"/>
+        <!-- in progress view indicate value of progress -->
+        <attr name="material_value" format="integer"/>
+        <!-- in progress view indicate value of progress -->
+        <attr name="material_progress" format="integer"/>
+        <attr name="material_ringWidth" format="dimension"/>
+        <!-- in switche's view indicate state of view -->
+        <attr name="material_check" format="boolean"/>
+        <attr name="material_checkBoxSize" format="dimension"/>
+        <attr name="material_thumbSize" format="dimension"/>
+        <!-- in float button indicate icon resource -->
+        <attr name="material_iconDrawable" format="integer"/>
+        <!-- in button whitch contains drawable indicate icon resource -->
+        <attr name="material_iconSize" format="dimension"/>
+        <!-- in float button indicate if must start with animation -->
+        <attr name="material_animate" format="boolean"/>
+        <!-- set the border of the ripple frame -->
+        <attr name="material_rippleBorderRadius" format="float"/>
+        <!-- if true, delays calls to OnClickListeners until ripple effect ends -->
+        <attr name="material_clickAfterRipple" format="boolean"/>
+    </declare-styleable>
+
+</resources>

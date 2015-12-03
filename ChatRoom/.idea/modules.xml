@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BitmapRegionDecoder/BitmapRegionDecoder.iml" filepath="$PROJECT_DIR$/BitmapRegionDecoder/BitmapRegionDecoder.iml" />
       <module fileurl="file://$PROJECT_DIR$/ChatRoom.iml" filepath="$PROJECT_DIR$/ChatRoom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EtsyBlur/EtsyBlur.iml" filepath="$PROJECT_DIR$/EtsyBlur/EtsyBlur.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialDesign/MaterialDesign.iml" filepath="$PROJECT_DIR$/MaterialDesign/MaterialDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Phoenix/Phoenix.iml" filepath="$PROJECT_DIR$/Phoenix/Phoenix.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
