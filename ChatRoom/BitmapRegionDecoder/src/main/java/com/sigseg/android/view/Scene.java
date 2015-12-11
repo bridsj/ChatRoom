@@ -29,7 +29,7 @@ import android.util.Log;
  */
 /**
  * Keeps track of an entire Scene -- a bitmap (or virtual bitmap) that is much too large
- * to fit into memory. Clients subclass this class and extend its abstract methods to
+ * to fit into memory. Clients subclass this class and extend its abstr methods to
  * actually return the necessary bitmaps.
  */
 public abstract class Scene {
@@ -119,7 +119,7 @@ public abstract class Scene {
     }
     //endregion
 
-    //region protected abstract
+    //region protected abstr
     /**
      * This method must return a high resolution Bitmap that the Scene 
      * will use to fill out the viewport bitmap upon request. This bitmap
