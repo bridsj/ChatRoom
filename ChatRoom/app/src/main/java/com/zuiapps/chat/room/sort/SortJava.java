@@ -7,8 +7,8 @@ public class SortJava implements ISortJava {
 
     @Override
     public void printArr(int[] intArr) {
-        for (int value : intArr) {
-            System.out.print(value + ",");
+        for (int intValue : intArr) {
+            System.out.print(intValue + ",");
         }
         System.out.println();
     }
@@ -51,6 +51,20 @@ public class SortJava implements ISortJava {
         return low;
     }
 
+    @Override
+    public int binarySearchSort(int[] intArr, int destValue, int low, int high) {
+        if (low <= high) {//Bug
+            int middle = (low + high) >> 1;
+            if (destValue == intArr[middle]) {
+                return middle;
+            } else if (destValue < intArr[middle]) {
+                return binarySearchSort(intArr, destValue, low, middle - 1);
+            } else if (destValue > intArr[middle]) {
+                return binarySearchSort(intArr, destValue, middle + 1, high);
+            }
+        }
+        return -1;
+    }
 
     @Override
     public void selectSort(int[] intArr) {
@@ -72,7 +86,7 @@ public class SortJava implements ISortJava {
     @Override
     public void insertSort(int[] intArr) {
         for (int i = 0; i < intArr.length; i++) {
-            for (int j = i; j > 0 && intArr[j] < intArr[j - 1]; j--) {
+            for (int j = i; j >= 1 && intArr[j] < intArr[j - 1]; j--) {
                 int tmp = intArr[j];
                 intArr[j] = intArr[j - 1];
                 intArr[j - 1] = tmp;
@@ -81,42 +95,89 @@ public class SortJava implements ISortJava {
     }
 
     @Override
-    public void mergeSort(int[] intArr, int left, int right) {
-
-    }
-
-    @Override
-    public void radixSort(int[] intArr) {
-
-    }
-
-    @Override
     public void shellSort(int[] intArr) {
+        int length = intArr.length;
+        int middle = intArr.length;
+        while (true) {
+            middle = (int) Math.ceil(middle / 2.0);
+            for (int i = 0; i < middle; i++) {
+                for (int j = i + middle; j < length; j = j + middle) {
+                    for (int k = j; k >= middle && intArr[k] < intArr[k - middle]; k = k - middle) {
+                        int tmp = intArr[k];
+                        intArr[k] = intArr[k - middle];
+                        intArr[k - middle] = tmp;
+                    }
+                }
+            }
+            if (middle == 1) {
+                break;
+            }
+        }
+    }
 
+    @Override
+    public void mergeSort(int[] intArr, int left, int right) {
+        if (left < right) {
+            int middle = (left + right) / 2;
+            mergeSort(intArr, left, middle);
+            mergeSort(intArr, middle + 1, right);
+            merge(intArr, left, middle, right);
+        }
+    }
 
+    private void merge(int[] intArr, int left, int middle, int right) {
+        int leftIndex = left;
+        int rightIndex = middle + 1;
+        int k = 0;
+        int[] tmp = new int[intArr.length];
+        while (leftIndex <= middle && rightIndex <= right) {
+            if (intArr[leftIndex] <= intArr[rightIndex]) {
+                tmp[k++] = intArr[leftIndex++];
+            } else {
+                tmp[k++] = intArr[rightIndex++];
+            }
+        }
+        while (rightIndex <= right) {
+            tmp[k++] = intArr[rightIndex++];
+        }
+        while (leftIndex <= middle) {
+            tmp[k++] = intArr[leftIndex++];
+        }
+        for (int i = 0; i < k; i++) {
+            intArr[left + i] = tmp[i];
+        }
+    }
+
+    @Override
+    public void radixSort(int[] intArr, int maxDigit) {
+        int n = 1;
+        int length = intArr.length;
+        if (length < 10) {
+            length = 10;
+        }
+        while (n <= maxDigit) {
+            int[][] bucket = new int[10][length];
+            int[] order = new int[length];
+            for (int intValue : intArr) {
+                int digit = (intValue / n) % 10;
+                bucket[digit][order[digit]] = intValue;
+                order[digit]++;
+            }
+            int k = 0;
+            for (int i = 0; i < 10; i++) {
+                if (order[i] != 0) {
+                    for (int j = 0; j < order[i]; j++) {
+                        intArr[k] = bucket[i][j];
+                        k++;
+                    }
+                }
+            }
+            n = n * 10;
+        }
     }
 
     @Override
     public void heapSort(int[] intArr) {
-
-    }
-
-    @Override
-    public int binarySearchSort(int[] intArr, int destValue, int low, int high) {//适用有序列表
-        if (low <= high) {
-            int middle = (low + high) >>> 1;
-            if (destValue == intArr[middle]) {
-                return middle;
-            } else if (destValue < intArr[middle]) {
-                return binarySearchSort(intArr, destValue, low, middle - 1);
-            } else if (destValue > intArr[middle]) {
-                return binarySearchSort(intArr, destValue, middle + 1, high);
-            }
-        } else {
-            return -1;
-        }
-        return -1;
-
 
     }
 }

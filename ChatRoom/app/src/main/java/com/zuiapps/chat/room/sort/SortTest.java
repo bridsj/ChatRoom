@@ -5,7 +5,8 @@ package com.zuiapps.chat.room.sort;
  */
 public class SortTest {
     public static void main(String[] args) {
-        int[] sourceArr = {9, 5, 6, 12, 7, 8, 1};
+//        int[] sourceArr = {9, 5, 6, 12, 7, 8, 1};
+        int[] sourceArr = {26, 5, 98, 108, 28, 99, 100, 56, 34, 1};
         int length = sourceArr.length;
         SortJava sortJava = new SortJava();
 
@@ -47,7 +48,7 @@ public class SortTest {
         System.out.println("radix:");
         int[] radixArr = sourceArr.clone();
         sortJava.printArr(radixArr);
-        sortJava.radixSort(radixArr);
+        sortJava.radixSort(radixArr, 100);
         sortJava.printArr(radixArr);
 
         System.out.println();
@@ -61,13 +62,14 @@ public class SortTest {
         System.out.println("heap:");
         int[] heapArr = sourceArr.clone();
         sortJava.printArr(heapArr);
-        sortJava.insertSort(heapArr);
+        sortJava.heapSort(heapArr);
         sortJava.printArr(heapArr);
 
         System.out.println();
         System.out.println("binarySearch:");
         sortJava.printArr(bubbleArr);
-        System.out.println("在某个位置=" + sortJava.binarySearchSort(bubbleArr,8, 0, length));
+        int searchNum = 108;
+        System.out.println(searchNum + "在某个位置=" + sortJava.binarySearchSort(bubbleArr, searchNum, 0, length));
 
     }
 }
