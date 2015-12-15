@@ -69,7 +69,7 @@ public class SortJava implements ISortJava {
     public void selectSort(int[] intArr) {
         for (int i = 0; i < intArr.length - 1; i++) {
             int min = i;
-            for (int j = i; j < intArr.length; j++) {
+            for (int j = i + 1; j < intArr.length; j++) {
                 if (intArr[j] < intArr[min]) {
                     min = j;
                 }
