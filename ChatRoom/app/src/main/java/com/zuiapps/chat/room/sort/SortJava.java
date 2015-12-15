@@ -4,7 +4,6 @@ package com.zuiapps.chat.room.sort;
  * Created by dengshengjin on 15/12/11.
  */
 public class SortJava implements ISortJava {
-
     @Override
     public void printArr(int[] intArr) {
         for (int intValue : intArr) {
@@ -38,7 +37,7 @@ public class SortJava implements ISortJava {
     private int getMiddle(int[] intArr, int low, int high) {
         int tmp = intArr[low];
         while (low < high) {
-            while (low < high && intArr[high] >= tmp) {
+            if (low < high && intArr[high] >= tmp) {
                 high--;
             }
             intArr[low] = intArr[high];
@@ -48,9 +47,8 @@ public class SortJava implements ISortJava {
             intArr[high] = intArr[low];
         }
         intArr[low] = tmp;
-        return low;//Bug
+        return low;
     }
-
 
     @Override
     public int binarySearchSort(int[] intArr, int destValue, int low, int high) {
@@ -71,7 +69,7 @@ public class SortJava implements ISortJava {
     public void selectSort(int[] intArr) {
         for (int i = 0; i < intArr.length - 1; i++) {
             int min = i;
-            for (int j = i + 1; j < intArr.length; j++) {
+            for (int j = i; j < intArr.length; j++) {
                 if (intArr[j] < intArr[min]) {
                     min = j;
                 }
@@ -127,22 +125,22 @@ public class SortJava implements ISortJava {
     }
 
     private void merge(int[] intArr, int left, int middle, int right) {
+        int leftStart = left;
+        int rightStart = middle + 1;
         int[] tmp = new int[intArr.length];
-        int leftIndex = left;
-        int rightIndex = middle + 1;
         int k = 0;
-        while (leftIndex <= middle && rightIndex <= right) {
-            if (intArr[leftIndex] < intArr[rightIndex]) {
-                tmp[k++] = intArr[leftIndex++];//Bug
+        while (leftStart <= middle && rightStart <= right) {
+            if (intArr[leftStart] < intArr[rightStart]) {
+                tmp[k++] = intArr[leftStart++];
             } else {
-                tmp[k++] = intArr[rightIndex++];//Bug
+                tmp[k++] = intArr[rightStart++];
             }
         }
-        while (rightIndex <= right) {
-            tmp[k++] = intArr[rightIndex++];//Bug
+        while (rightStart <= right) {
+            tmp[k++] = intArr[rightStart++];
         }
-        while (leftIndex <= middle) {
-            tmp[k++] = intArr[leftIndex++];//Bug
+        while (leftStart <= middle) {
+            tmp[k++] = intArr[leftStart++];
         }
         for (int i = 0; i < k; i++) {
             intArr[left + i] = tmp[i];
@@ -151,11 +149,11 @@ public class SortJava implements ISortJava {
 
     @Override
     public void radixSort(int[] intArr, int maxDigit) {
+        int n = 1;
         int length = intArr.length;
         if (length < 10) {
             length = 10;
         }
-        int n = 1;
         while (n <= maxDigit) {
             int[][] bucket = new int[10][length];
             int[] order = new int[length];

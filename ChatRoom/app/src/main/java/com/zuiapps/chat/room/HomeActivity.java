@@ -10,12 +10,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.sigseg.android.map.ImageViewerActivity;
+import com.zuiapps.autolayout.AutoLayout2;
 import com.zuiapps.chat.room.fragment.NavigationDrawerFragment;
 import com.zuiapps.chat.room.fragment.RecyclerViewFragment;
 
 /**
  * Created by dengshengjin on 15/12/1.
  */
+@AutoLayout2
 public class HomeActivity extends AppCompatActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     /**

@@ -1,4 +1,4 @@
-package com;
+package com.zuiapps.autolayout;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,5 +7,5 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.CLASS)
-public @interface StaticStringUtil {
+public @interface AutoLayout2 {
 }
