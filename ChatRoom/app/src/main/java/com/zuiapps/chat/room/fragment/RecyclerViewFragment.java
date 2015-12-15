@@ -66,7 +66,7 @@ public class RecyclerViewFragment extends BaseRefreshFragment {
         }
     }
 
-    private class SampleHolder extends RecyclerView.ViewHolder {
+    private static class SampleHolder extends RecyclerView.ViewHolder {
 
         private View mRootView;
         private ImageView mImageViewIcon;

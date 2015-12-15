@@ -48,12 +48,13 @@ public class SortJava implements ISortJava {
             intArr[high] = intArr[low];
         }
         intArr[low] = tmp;
-        return low;
+        return low;//Bug
     }
+
 
     @Override
     public int binarySearchSort(int[] intArr, int destValue, int low, int high) {
-        if (low <= high) {//Bug
+        if (low <= high) {
             int middle = (low + high) >> 1;
             if (destValue == intArr[middle]) {
                 return middle;
@@ -96,12 +97,12 @@ public class SortJava implements ISortJava {
 
     @Override
     public void shellSort(int[] intArr) {
-        int length = intArr.length;
         int middle = intArr.length;
+        int length = intArr.length;
         while (true) {
             middle = (int) Math.ceil(middle / 2.0);
             for (int i = 0; i < middle; i++) {
-                for (int j = i + middle; j < length; j = j + middle) {
+                for (int j = i; j < length; j = j + middle) {
                     for (int k = j; k >= middle && intArr[k] < intArr[k - middle]; k = k - middle) {
                         int tmp = intArr[k];
                         intArr[k] = intArr[k - middle];
@@ -126,22 +127,22 @@ public class SortJava implements ISortJava {
     }
 
     private void merge(int[] intArr, int left, int middle, int right) {
+        int[] tmp = new int[intArr.length];
         int leftIndex = left;
         int rightIndex = middle + 1;
         int k = 0;
-        int[] tmp = new int[intArr.length];
         while (leftIndex <= middle && rightIndex <= right) {
-            if (intArr[leftIndex] <= intArr[rightIndex]) {
-                tmp[k++] = intArr[leftIndex++];
+            if (intArr[leftIndex] < intArr[rightIndex]) {
+                tmp[k++] = intArr[leftIndex++];//Bug
             } else {
-                tmp[k++] = intArr[rightIndex++];
+                tmp[k++] = intArr[rightIndex++];//Bug
             }
         }
         while (rightIndex <= right) {
-            tmp[k++] = intArr[rightIndex++];
+            tmp[k++] = intArr[rightIndex++];//Bug
         }
         while (leftIndex <= middle) {
-            tmp[k++] = intArr[leftIndex++];
+            tmp[k++] = intArr[leftIndex++];//Bug
         }
         for (int i = 0; i < k; i++) {
             intArr[left + i] = tmp[i];
@@ -150,11 +151,11 @@ public class SortJava implements ISortJava {
 
     @Override
     public void radixSort(int[] intArr, int maxDigit) {
-        int n = 1;
         int length = intArr.length;
         if (length < 10) {
             length = 10;
         }
+        int n = 1;
         while (n <= maxDigit) {
             int[][] bucket = new int[10][length];
             int[] order = new int[length];
