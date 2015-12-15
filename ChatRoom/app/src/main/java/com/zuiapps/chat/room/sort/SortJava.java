@@ -37,7 +37,7 @@ public class SortJava implements ISortJava {
     private int getMiddle(int[] intArr, int low, int high) {
         int tmp = intArr[low];
         while (low < high) {
-            if (low < high && intArr[high] >= tmp) {
+            while (low < high && intArr[high] >= tmp) {
                 high--;
             }
             intArr[low] = intArr[high];
