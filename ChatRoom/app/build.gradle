@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     compileSdkVersion 23
@@ -20,7 +21,8 @@ android {
         }
     }
 }
-
+sourceCompatibility = JavaVersion.VERSION_1_7
+targetCompatibility = JavaVersion.VERSION_1_7
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.1.0'
@@ -29,4 +31,8 @@ dependencies {
     compile project(':Phoenix')
     compile project(':EtsyBlur')
     compile project(':BitmapRegionDecoder')
+    compile project(':api')
+    apt project(':compiler')
+//    compile 'com.zuiapps:autolayout:1.0.0'
+//    apt 'com.zuiapps:autolayout-compiler:1.0.0'
 }

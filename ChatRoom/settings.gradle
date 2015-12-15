@@ -1,1 +1,1 @@
-include ':app', ':MaterialDesign', ':Phoenix', ':EtsyBlur', ':BitmapRegionDecoder'
+include ':app', ':MaterialDesign', ':Phoenix', ':EtsyBlur', ':BitmapRegionDecoder', ':compiler', ':api'
