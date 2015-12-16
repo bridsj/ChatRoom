@@ -1,5 +1,7 @@
 package com.zuiapps.chat.room.dynamic;
 
+import android.view.ViewAnimationUtils;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -35,6 +37,9 @@ public class Pack01Problem {
                 if (i == 0 || j == 0) {
                     mBestValues[i][j] = 0;
                 } else {
+                    if (i == 1 && j == 3) {
+                        System.out.println(mBestValues[i - 1][j]+","+mSourcePacks[i - 1].getWeight());
+                    }
                     if (mSourcePacks[i - 1].getWeight() > j) {
                         mBestValues[i][j] = mBestValues[i - 1][j];
                     } else {
@@ -81,14 +86,15 @@ public class Pack01Problem {
                 new Pack(4, 28), new Pack(5, 33),
                 new Pack(3, 20), new Pack(1, 8)
         };
-        int maxWeight = 12;
+        int maxWeight = 10;
         Pack01Problem pack01Problem = new Pack01Problem(sourcePacks, maxWeight);
         pack01Problem.solve();
         System.out.println(" -------- 该背包问题实例的解: --------- ");
         System.out.println("最优值：" + pack01Problem.getBestValue());
         System.out.println("最优解【选取的背包】: ");
-        System.out.println(pack01Problem.getBestPacks());
+        System.out.println(pack01Problem.getBestPacks()); ViewAnimationUtils.createCircularReveal()
         System.out.println("最优值矩阵：个数/重量");
+
         int[][] bestValues = pack01Problem.getBestValues();
         for (int i = 0; i < bestValues.length; i++) {
             System.out.print("第几个背包=" + i + "\t");

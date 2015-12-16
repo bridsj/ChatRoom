@@ -11,7 +11,7 @@ import java.util.concurrent.FutureTask;
 /**
  * Created by dengshengjin on 15/12/15.
  */
-public class ThreadTest3 {
+public class ThreadCreateViaFutureTask {
     static class FutureTaskForMultiCompute extends FutureTask<Integer> {
         private ThreadLocal<Integer> mThreadLocal;
 
@@ -45,7 +45,7 @@ public class ThreadTest3 {
     }
 
     public static void main(String[] args) {
-        ThreadTest3 threadTest3 = new ThreadTest3();
+        ThreadCreateViaFutureTask threadCreateViaFutureTask = new ThreadCreateViaFutureTask();
         final ConcurrentHashMap<Integer, FutureTaskForMultiCompute> mConcurrentPool = new ConcurrentHashMap<>();
         ExecutorService mExecutor = Executors.newSingleThreadExecutor();
         for (int i = 0; i < 3; i++) {
@@ -53,7 +53,7 @@ public class ThreadTest3 {
             if (futureTask != null) {
                 continue;
             } else {
-                FutureCallable futureCallable = threadTest3.new FutureCallable(i);
+                FutureCallable futureCallable = threadCreateViaFutureTask.new FutureCallable(i);
                 futureTask = new FutureTaskForMultiCompute(futureCallable, i);
                 mConcurrentPool.putIfAbsent(i, futureTask);
                 mExecutor.submit(futureTask);

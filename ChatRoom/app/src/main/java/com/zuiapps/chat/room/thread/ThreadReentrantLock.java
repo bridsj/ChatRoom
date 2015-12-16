@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Created by dengshengjin on 15/12/15.
  */
-public class ThreadTest4 {
+public class ThreadReentrantLock {
     private ReentrantLock lock = new ReentrantLock();
 
     private Object _lock = new Object();
@@ -27,7 +27,7 @@ public class ThreadTest4 {
     }
 
     public static void main(String[] args) {
-        final ThreadTest4 threadTest4 = new ThreadTest4();
+        final ThreadReentrantLock threadTest4 = new ThreadReentrantLock();
         new Thread() {
             @Override
             public void run() {
