@@ -1,7 +1,5 @@
 package com.zuiapps.chat.room.dynamic;
 
-import android.view.ViewAnimationUtils;
-
 import java.util.LinkedList;
 import java.util.List;
 
@@ -92,7 +90,7 @@ public class Pack01Problem {
         System.out.println(" -------- 该背包问题实例的解: --------- ");
         System.out.println("最优值：" + pack01Problem.getBestValue());
         System.out.println("最优解【选取的背包】: ");
-        System.out.println(pack01Problem.getBestPacks()); ViewAnimationUtils.createCircularReveal()
+        System.out.println(pack01Problem.getBestPacks());
         System.out.println("最优值矩阵：个数/重量");
 
         int[][] bestValues = pack01Problem.getBestValues();
