@@ -1,1 +1,1 @@
-include ':app', ':MaterialDesign', ':Phoenix', ':EtsyBlur', ':BitmapRegionDecoder', ':compiler', ':api'
+include ':app', ':MaterialDesign', ':Phoenix', ':EtsyBlur', ':BitmapRegionDecoder', ':compiler', ':api', ':android_utils'

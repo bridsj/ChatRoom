@@ -9,59 +9,10 @@
         <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/renderscript-v8-91b78eb610877b96c2657766583b7500b533e9cd.jar" />
     </item>
     <item
-        jar="/Users/dengshengjin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-bfb712a8e9616878f74a54415ca09c67a6d941f9.jar" />
-    </item>
-    <item
-        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/ChatRoom/MaterialDesign/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="cd0fe89b4ca16ead34b837f26c9b060f2c62910d">
-        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-4a208d391bd01bac405f9007f3a0470d2c318a1c.jar" />
-    </item>
-    <item
-        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-27206b0662c1d1581462a30bcbbcfb1a61ece42e.jar" />
-    </item>
-    <item
-        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/ChatRoom/EtsyBlur/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1fe3845cf23ad8baa8dadddc53998c7d0d7cdcdc">
-        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-23a7a413b46ba198e778e6d2d74f0b9af6d54f5f.jar" />
-    </item>
-    <item
-        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/ChatRoom/BitmapRegionDecoder/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5f8727224e2bb8a7c1fe6f9c828b2bcb76345e21">
-        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-52cdea935af899002d9e0040687625abb1382d8a.jar" />
-    </item>
-    <item
-        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-a91a4b8864c049db39237e66b8957fbaeb807bd2.jar" />
-    </item>
-    <item
-        jar="/Users/dengshengjin/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/library-2.4.0-34eddc7f2b6aed69857cb4788acdfe845b6819cd.jar" />
-    </item>
-    <item
         jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/api/build/libs/api.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="b0212c0e194fd216e349f0e24e24d59384009c6d">
+        sha1="cd6271cf1237d4131dbb8c4c462d3783c6a12402">
         <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/api-471d2a4a1d206811574befc1ddf3609d7a67de0d.jar" />
     </item>
     <item
@@ -72,11 +23,39 @@
         <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-8de0cce2ab104287ef8d303669b1e62a852ee01e.jar" />
     </item>
     <item
+        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/ChatRoom/Phoenix/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1c4b8327477da45610f2f4c663201c3333e8bbba">
+        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-ba4ca2d6420669fc9ae46754a87b0a19f77ce906.jar" />
+    </item>
+    <item
         jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
         <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-2267ac49ffd02549f85f9c9d66ee339097372e12.jar" />
+    </item>
+    <item
+        jar="/Users/dengshengjin/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/library-2.4.0-34eddc7f2b6aed69857cb4788acdfe845b6819cd.jar" />
+    </item>
+    <item
+        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-a91a4b8864c049db39237e66b8957fbaeb807bd2.jar" />
+    </item>
+    <item
+        jar="/Users/dengshengjin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-bfb712a8e9616878f74a54415ca09c67a6d941f9.jar" />
     </item>
     <item
         jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
@@ -86,11 +65,39 @@
         <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-386231d628a2a56c3f76b3c31a7c7b1df4905d14.jar" />
     </item>
     <item
-        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/ChatRoom/Phoenix/unspecified/jars/classes.jar"
+        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/ChatRoom/BitmapRegionDecoder/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="cae1bd30fb84fcca2023637d71f8e594b4267b41">
-        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-ba4ca2d6420669fc9ae46754a87b0a19f77ce906.jar" />
+        sha1="157cbc744f4221e69b7c7e1a39e5c8d44d16daaa">
+        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-52cdea935af899002d9e0040687625abb1382d8a.jar" />
+    </item>
+    <item
+        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/libs/IKExpression2.1.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b7e8ba724289f54825b6e6e061bcbde074cce9eb">
+        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/IKExpression2.1.2-1540c1652642a3040b15b778c4b1e5c23445a91f.jar" />
+    </item>
+    <item
+        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/ChatRoom/MaterialDesign/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="23ebfa812611d0f798747ec934eb6ff88f2a25ec">
+        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-4a208d391bd01bac405f9007f3a0470d2c318a1c.jar" />
+    </item>
+    <item
+        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/ChatRoom/EtsyBlur/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="db59ff64fd1579fd7e52b97b70560421a634c648">
+        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/classes-23a7a413b46ba198e778e6d2d74f0b9af6d54f5f.jar" />
+    </item>
+    <item
+        jar="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/dengshengjin/ApplicationFiles/DeveloperFiles/DeveloperMyself/ChatRoom/ChatRoom/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-27206b0662c1d1581462a30bcbbcfb1a61ece42e.jar" />
     </item>
 
 </items>

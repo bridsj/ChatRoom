@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="IKExpression2.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/IKExpression2.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

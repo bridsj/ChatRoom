@@ -1,75 +1,67 @@
 package com.zuiapps.chat.room.sort;
 
+import org.wltea.expression.ExpressionEvaluator;
+
+
 /**
  * Created by dengshengjin on 15/12/11.
  */
-public class SortTest {
-    public static void main(String[] args) {
-//        int[] sourceArr = {9, 5, 6, 12, 7, 8, 1};
-        int[] sourceArr = {26, 5, 98, 108, 28, 99, 100, 56, 34, 1};
-        int length = sourceArr.length;
+public class SortTest implements Cloneable {
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    public static void main(String[] args) throws CloneNotSupportedException {
+        int[] intArr = {10, 52, 14, 8, 48, 9, 61, 78, 45, 31};
+        int length = intArr.length;
         SortJava sortJava = new SortJava();
-
-        System.out.println("bubble:");
-        int[] bubbleArr = sourceArr.clone();
-        sortJava.printArr(bubbleArr);
+        System.out.print("source:");
+        sortJava.println(intArr);
+        //bubble
+        int[] bubbleArr = intArr.clone();
         sortJava.bubbleSort(bubbleArr);
-        sortJava.printArr(bubbleArr);
-
-        System.out.println();
-        System.out.println("quick:");
-        int[] quickArr = sourceArr.clone();
-        sortJava.printArr(quickArr);
+        System.out.print("bubble:");
+        sortJava.println(bubbleArr);
+        //quick
+        int[] quickArr = intArr.clone();
         sortJava.quickSort(quickArr, 0, length - 1);
-        sortJava.printArr(quickArr);
-
-        System.out.println();
-        System.out.println("select:");
-        int[] selectArr = sourceArr.clone();
-        sortJava.printArr(selectArr);
+        System.out.print("quick0:");
+        sortJava.println(quickArr);
+        //binary search
+        System.out.println("binarySearch:" + sortJava.binarySearch(quickArr, 52, 0, length));
+        //select
+        int[] selectArr = intArr.clone();
         sortJava.selectSort(selectArr);
-        sortJava.printArr(selectArr);
-
-        System.out.println();
-        System.out.println("insert:");
-        int[] insertArr = sourceArr.clone();
-        sortJava.printArr(insertArr);
+        System.out.print("select:");
+        sortJava.println(selectArr);
+        //insert
+        int[] insertArr = intArr.clone();
         sortJava.insertSort(insertArr);
-        sortJava.printArr(insertArr);
-
-        System.out.println();
-        System.out.println("merge:");
-        int[] mergeArr = sourceArr.clone();
-        sortJava.printArr(mergeArr);
-        sortJava.mergeSort(mergeArr, 0, length - 1);
-        sortJava.printArr(mergeArr);
-
-        System.out.println();
-        System.out.println("radix:");
-        int[] radixArr = sourceArr.clone();
-        sortJava.printArr(radixArr);
-        sortJava.radixSort(radixArr, 100);
-        sortJava.printArr(radixArr);
-
-        System.out.println();
-        System.out.println("shell:");
-        int[] shellArr = sourceArr.clone();
-        sortJava.printArr(shellArr);
+        System.out.print("insert:");
+        sortJava.println(insertArr);
+        //shell
+        int[] shellArr = intArr.clone();
         sortJava.shellSort(shellArr);
-        sortJava.printArr(shellArr);
+        System.out.print("shell0:");
+        sortJava.println(shellArr);
+        //shell
+        int[] mergeArr = intArr.clone();
+        sortJava.mergeSort(mergeArr, 0, length - 1);
+        System.out.print("merge0:");
+        sortJava.println(mergeArr);
+        //radix
+        int[] radixArr = intArr.clone();
+        sortJava.radixSort(radixArr, 100);
+        System.out.print("radix0:");
+        sortJava.println(radixArr);
 
-        System.out.println();
-        System.out.println("heap:");
-        int[] heapArr = sourceArr.clone();
-        sortJava.printArr(heapArr);
-        sortJava.heapSort(heapArr);
-        sortJava.printArr(heapArr);
+        String r = "10*n+1";
+        int n = 5;
+        r = r.replace("n", n + "");
+        System.out.println(ExpressionEvaluator.evaluate(r));
 
-        System.out.println();
-        System.out.println("binarySearch:");
-        sortJava.printArr(bubbleArr);
-        int searchNum = 108;
-        System.out.println(searchNum + "在某个位置=" + sortJava.binarySearchSort(bubbleArr, searchNum, 0, length));
-
+        new SortTest().clone();
     }
 }

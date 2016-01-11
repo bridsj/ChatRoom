@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -13,6 +14,8 @@ import com.sigseg.android.map.ImageViewerActivity;
 import com.zuiapps.autolayout.AutoLayout2;
 import com.zuiapps.chat.room.fragment.NavigationDrawerFragment;
 import com.zuiapps.chat.room.fragment.RecyclerViewFragment;
+
+import org.wltea.expression.ExpressionEvaluator;
 
 /**
  * Created by dengshengjin on 15/12/1.
@@ -42,6 +45,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationDrawerF
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+        Log.e("", "HomeActivity" + ExpressionEvaluator.evaluate("5"));
     }
 
     @Override
